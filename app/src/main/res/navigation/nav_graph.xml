@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/CityInputFragment"
         android:name="com.example.weatherapp.ui.CityInputFragment"
-        android:label="@string/first_fragment_label"
+        android:label="@string/city_input_fragment_label"
         tools:layout="@layout/fragment_city_input">
 
         <action
@@ -18,14 +18,7 @@
     <fragment
         android:id="@+id/WeatherDetailsFragment"
         android:name="com.example.weatherapp.ui.WeatherDetailsFragment"
-        android:label="@string/second_fragment_label"
+        android:label="@string/weather_details_fragment_label"
         tools:layout="@layout/fragment_weather_details">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/CityInputFragment" />
-        <argument
-            android:name="city"
-            app:argType="string"/>
     </fragment>
 </navigation>

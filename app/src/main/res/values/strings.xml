@@ -2,8 +2,8 @@
     <string name="app_name">WeatherApp</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="city_input_fragment_label">First Fragment</string>
+    <string name="weather_details_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
@@ -12,5 +12,14 @@
     <string name="city">City</string>
     <string name="show_results">Show results</string>
     <string name="city_not_filled">City must be set</string>
-    <string name="Temperature">Temperature:</string>
+    <string name="temperature">Temperature:</string>
+    <string name="min">Min:</string>
+    <string name="max">Max:</string>
+    <string name="humidity">Humidity:</string>
+    <string name="pressure">Pressure:</string>
+
+    <string name="celsius">%s \u2103</string>
+
+    <string name="network_error_occurred">Network error occurred</string>
+    <string name="error_occurred">Error occurred</string>
 </resources>

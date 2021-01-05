@@ -6,5 +6,5 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 
 class ResourceResolver @Inject constructor(@ApplicationContext private val context: Context) {
-    fun resolveString(@StringRes stringId: Int) = context.getString(stringId)
+    fun resolveString(@StringRes stringId: Int, vararg args: String) = context.getString(stringId, *args)
 }

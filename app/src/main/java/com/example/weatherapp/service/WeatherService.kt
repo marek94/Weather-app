@@ -1,11 +1,11 @@
 package com.example.weatherapp.service
 
-import com.example.weatherapp.data.WeatherData
+import com.example.weatherapp.data.WeatherDTO
 import retrofit2.Response
 import retrofit2.http.GET
-import retrofit2.http.QueryMap
+import retrofit2.http.Query
 
 interface WeatherService {
-    @GET
-    suspend fun getWeather(@QueryMap map: Map<String, String>): Response<WeatherData>
+    @GET("weather")
+    suspend fun getWeather(@Query("q") city: String, @Query("units") unit: String = "metric"): WeatherDTO
 }
